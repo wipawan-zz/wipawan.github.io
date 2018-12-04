@@ -2,7 +2,7 @@ videojs.registerPlugin("listenForParent", function() {
   var myPlayer = this;
   // This method called when postMessage sends data into the iframe
   function controlVideo(evt) {
-    if (evt.data === "toggleMute") {
+    if (evt.data === "unmute") {
       myPlayer.muted(false);
     }
   }
